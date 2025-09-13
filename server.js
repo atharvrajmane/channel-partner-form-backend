@@ -3,7 +3,6 @@ const express = require('express');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
 // Loads environment variables from a .env file for local development
-require('dotenv').config(); 
 
 // Create an Express application
 const app = express();
