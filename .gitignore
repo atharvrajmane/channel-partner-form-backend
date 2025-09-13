@@ -1,0 +1,17 @@
+# Ignore environment variables - THIS IS THE MOST IMPORTANT LINE
+.env
+
+# Ignore Node.js dependencies folder
+node_modules/
+
+# Ignore log files
+*.log
+npm-debug.log*
+
+# Ignore compiled output folders (optional, but good practice)
+dist/
+build/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
