@@ -21,13 +21,10 @@ const dbPool = mysql.createPool({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
+    port: process.env.MYSQLPORT, 
     waitForConnections: true,
     connectionLimit: 10,
-    queueLimit: 0,
-    // PlanetScale requires a secure connection, so we enable SSL.
-    ssl: {
-        rejectUnauthorized: true
-    }
+    queueLimit: 0
 });
 
 // --- API ENDPOINTS ---
